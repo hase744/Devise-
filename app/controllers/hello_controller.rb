@@ -9,4 +9,7 @@ class HelloController < ApplicationController
     @account = current_account
     @msg = 'account created at: ' + @account.created_at.to_s
   end
+
+  def after_sign_out
+  end
 end
